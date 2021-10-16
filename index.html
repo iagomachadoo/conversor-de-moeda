@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Conversor de Moeda</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Conversor de Moeda
+        </h1>
+
+        <h2>
+            Converta de forma fácil e rápida
+        </h2>
+    </header>
+    <main>
+        <div id="converter-para">
+            <label for="moeda-convertida" hidden>Converter</label>
+
+            <input type="text" name="moeda-convertida" id="moeda-convertida" list="moedas" class="nome-moeda" placeholder="Converter">
+
+            <img src="img/double_arrow_black_24dp.svg" alt="seta apontando para a direita" id="seta-direita">
+
+            <label for="moeda-referencia" hidden>Para</label>
+            
+            <input type="text" name="moeda-referencia" id="moeda-referencia" list="moedas" class="nome-moeda" placeholder="Para">
+        </div>
+
+        <datalist id="moedas">
+            <option>
+                Bitcoin
+            </option>
+
+            <option>
+                Dólar Americano
+            </option>
+
+            <option>
+                Euro
+            </option>
+
+            <option>
+                Real
+            </option>
+        </datalist>
+
+        <div id="valor">
+            <label for="valor-a-converter">Valor a ser convertido</label>
+
+            <input type="number" name="valor-a-converter" id="valor-a-converter">
+        </div>
+
+        <div id="btn-converter">
+            <input type="button" value="Converter" onclick="converter()">
+        </div>
+
+        <div id="resultado"></div>
+        <div id="mostrar-valor"></div>
+    </main>
+    <footer>
+        <p>
+            Criado por <span>Iago Machado</span>
+        </p>
+
+        <p>
+            <a href="https://www.linkedin.com/in/iago-machado/" target="_blank" rel="external">
+                <img src="img/linkedin.svg" alt="Linkedin" class="midia-social">
+            </a>
+
+            <a href="https://github.com/iagomachadoo" target="_blank" rel="external">
+                <img src="img/github.svg" alt="github" class="midia-social">
+            </a>
+
+            <a href="https://www.instagram.com/iago.machado/" target="_blank" rel="external">
+                <img src="img/instagram.svg" alt="instagran" class="midia-social">
+            </a>
+        </p>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>

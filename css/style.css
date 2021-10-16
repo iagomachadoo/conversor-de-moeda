@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*{
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+}/*master reset*/
+
+:root{
+    --cor1: #F5F500;
+    --cor2: rgba(245, 28, 24, 0.600);
+    --cor3: #A80C08;
+    --cor4: #1898F5;
+    --cor5: #A8A811;
+    --fonte-destaque: 'Roboto Slab', serif;
+    --fonte-padrao: 'Roboto', sans-serif;
+}
+
+body{
+    font-size: 16px;
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor2);
+}
+
+header{
+    margin: 40px auto 20px auto;
+    text-align: center;
+}
+
+header h1{
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    font-weight: 400;
+    margin: auto;
+    padding-top: 20px;
+}
+
+header h2{
+    font-family: var(--fonte-destaque);
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+main{
+    background-color: var(--cor4);
+    min-width: 150px;
+    max-width: 500px;
+    min-height: 200px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.300);
+}
+
+input{
+    width: 160px;
+    height: 25px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 4px;
+    min-width: 120px;
+}
+
+div#converter-para{
+    margin: auto;
+    padding: 30px 0 10px 0;
+    text-align: center;
+    display: flex;
+}
+
+input.nome-moeda{
+    display: flex;
+    margin: auto;
+}
+
+input#moeda-convertida{
+    margin-right: 5px;
+}
+
+input#moeda-referencia{
+    margin-left: 5px;
+}
+
+img#seta-direita{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+div#valor{
+    display: flex;
+    text-align: left;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#valor label{
+    margin: auto;
+    margin-right: 0;
+    font-size: 1.1em;
+    display: flex;
+}
+
+input#valor-a-converter{
+    width: 90px;
+    display: flex;
+    margin: auto;
+    margin-left: 5px;
+    justify-content: left;
+}
+
+div#btn-converter{
+    text-align: center;
+    margin: 40px auto 15px auto;
+}
+
+div#btn-converter input{
+    width: 120px;
+    height: 30px;
+    background-color: var(--cor3);
+    color: rgb(182, 182, 182);
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+div#btn-converter input:hover{
+    background-color: var(--cor2);
+    color: black;
+    font-size: 1.3em;
+}
+
+#resultado{
+    display: flex;
+    margin: 40px auto 0 auto ;
+}
+
+#simbolo-de-igual{
+    display: flex;
+    margin: auto 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+}
+
+.moeda{
+    width: 70px;
+    height: 70px;
+    background-color: var(--cor1);
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    box-shadow: 6px 2px 10px rgb(0 0 0 / 49%);
+}
+
+.moeda p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 3.2em
+}
+
+.moeda #simbolo-dolar{
+    font-weight: bold;
+}
+
+.moeda #real{
+    font-size: 2.76em;
+    font-weight: bold;
+}
+
+.moeda img{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-right: 3px;
+}
+
+.moeda #euro{
+    margin-right: 10px;
+}
+
+#mostrar-valor{
+    display: flex;
+}
+
+#mostrar-valor .valor-da-moeda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    min-width: 120px;
+    font-size: 1.3em;
+    margin-left: 60px;  
+}
+
+#mostrar-valor .valor-da-moeda-lado-direito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    min-width: 120px;
+    font-size: 1.3em;
+    margin-right: 58px;
+}
+
+footer{
+    margin: 30px auto;
+    text-align: center;
+}
+
+footer p{
+    font-size: 1.2em;
+    font-family: var(--fonte-destaque);
+    margin: 10px auto;
+}
+
+p span{
+    font-weight: 600;
+}
+
+a{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: auto 15px;
+}
+
+.midia-social{
+    width: 23px;
+    height: 23px;
+}
